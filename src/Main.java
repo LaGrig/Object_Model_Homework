@@ -1,17 +1,71 @@
 public class Main {
     public static void main(String[] args) {
+        var iPhone = new Apple("Apple", "15 Pro Max", "iOs", 2023, 5.77, 512, "ApplePay", false, 1, 0);
+        var Samsung = new Samsung("Samsung", "S23 Ultra", "Android", 2023, 6.8, 512, "GooglePay", false, 2, 1024);
+        var SamsungProtected = new Protected_Smartphone("Samsung", "XCover 6 Pro", "Android", 2022, 6.6, 128, "GooglePay", true, 2, 1024, "MIL-STD-810H", true);
+        var Huawei = new Huawei("Huawei", "Mate X3", "HarmonyOS", 2023, 7.6, 512, "GooglePay", true, 2, 2024);
+        var Xiaomi = new Xiaomi("Xiaomi", "13 Ultra", "Android", 2023, 6.73, 512, "GooglePay", true, 2, 2024);
 
-        Apple iPhone = new Apple("Iphone", "15 Pro Max", "iOs", 512, 5.77);
-        Samsung Galaxy = new Samsung("Samsung", "S23 Ultra", "Android", 512, 6.8);
-        Xiaomi Ultra = new Xiaomi("Xiaomi", "13 Ultra", "Android", 1024, 6.73);
-        Nokia XR = new Nokia("Nokia", "XR", "Android", 64, 6.49);
-        Huawei Mate = new Huawei("Huawei", "Mate X3", "HarmonyOS", 512, 7.6);
+        System.out.println("Smartphones list:");
+        System.out.println("****************************");
+        System.out.println("Brand: " + iPhone.getBrand());
+        System.out.println("Model: " + iPhone.getModel());
+        System.out.println("OS:" + iPhone.getOperationSystem());
+        System.out.println("Screen size:" + iPhone.getScreenSize() + "\"");
+        System.out.println("Release year:" + iPhone.getYearReleased());
+        System.out.println("Build in memory:" + iPhone.getBuildInMemoryStorage());
+        System.out.println("Payment system support:" + iPhone.getPaymentSystem());
+        System.out.println("Audio jack presence:" + iPhone.isAudioJackPresence());
+        System.out.println("Max SimCards support:" + iPhone.getSimCardNumSupport());
+        System.out.println("Max microSD card size:" + iPhone.getMaxSdCardSizeSupportGb());
+        System.out.println("****************************");
 
-        System.out.println(iPhone.getBrand() + " " + iPhone.getModel() + " / " + iPhone.getOperationSystem() + " / " + iPhone.getScreenSize() + " / " + iPhone.getBuildInMemoryCapacity() + "Gb");
-        System.out.println(Galaxy.getBrand() + " " + Galaxy.getModel() + " / " + Galaxy.getOperationSystem() + " / " + Galaxy.getScreenSize() + " / " + Galaxy.getBuildInMemoryCapacity() + "Gb");
-        System.out.println(Ultra.getBrand() + " " + Ultra.getModel() + " / " + Ultra.getOperationSystem() + " / " + Ultra.getScreenSize() + " / " + Ultra.getBuildInMemoryCapacity() + "Gb");
-        System.out.println(XR.getBrand() + " " + XR.getModel() + " / " + XR.getOperationSystem() + " / " + XR.getScreenSize() + " / " + XR.getBuildInMemoryCapacity() + "Gb");
-        System.out.println(Mate.getBrand() + " " + Mate.getModel() + " / " + Mate.getOperationSystem() + " / " + Mate.getScreenSize() + " / " + Mate.getBuildInMemoryCapacity() + "Gb");
+        System.out.println("Brand: " + Samsung.getBrand());
+        System.out.println("Model: " + Samsung.getModel());
+        System.out.println("OS:" + Samsung.getOperationSystem());
+        System.out.println("Screen size:" + Samsung.getScreenSize() + "\"");
+        System.out.println("Release year:" + Samsung.getYearReleased());
+        System.out.println("Build in memory:" + Samsung.getBuildInMemoryStorage() + " Gb");
+        System.out.println("Payment system support:" + Samsung.getPaymentSystem());
+        System.out.println("Audio jack presence:" + Samsung.isAudioJackPresence());
+        System.out.println("Max SimCards support:" + Samsung.getSimCardNumSupport());
+        System.out.println("Max microSD card size:" + Samsung.getMaxSdCardSizeSupportGb() + " Gb");
+        System.out.println("****************************");
 
+        System.out.println("Brand: " + SamsungProtected.getBrand());
+        System.out.println("Model: " + SamsungProtected.getModel());
+        System.out.println("OS:" + SamsungProtected.getOperationSystem());
+        System.out.println("Screen size:" + SamsungProtected.getScreenSize() + "\"");
+        System.out.println("Release year:" + SamsungProtected.getYearReleased());
+        System.out.println("Build in memory:" + SamsungProtected.getBuildInMemoryStorage() + " Gb");
+        System.out.println("Payment system support:" + SamsungProtected.getPaymentSystem());
+        System.out.println("Audio jack presence:" + SamsungProtected.isAudioJackPresence());
+        System.out.println("Max SimCards support:" + SamsungProtected.getSimCardNumSupport());
+        System.out.println("Max microSD card size:" + SamsungProtected.getMaxSdCardSizeSupportGb() + " Gb");
+        System.out.println("****************************");
+
+        System.out.println("Brand: " + Xiaomi.getBrand());
+        System.out.println("Model: " + Xiaomi.getModel());
+        System.out.println("OS:" + Xiaomi.getOperationSystem());
+        System.out.println("Screen size:" + Xiaomi.getScreenSize() + "\"");
+        System.out.println("Release year:" + Xiaomi.getYearReleased());
+        System.out.println("Build in memory:" + Xiaomi.getBuildInMemoryStorage() + " Gb");
+        System.out.println("Payment system support:" + Xiaomi.getPaymentSystem());
+        System.out.println("Audio jack presence:" + Xiaomi.isAudioJackPresence());
+        System.out.println("Max SimCards support:" + Xiaomi.getSimCardNumSupport());
+        System.out.println("Max microSD card size:" + Xiaomi.getMaxSdCardSizeSupportGb() + " Gb");
+        System.out.println("****************************");
+
+        System.out.println("Brand: " + Huawei.getBrand());
+        System.out.println("Model: " + Huawei.getModel());
+        System.out.println("OS:" + Huawei.getOperationSystem());
+        System.out.println("Screen size:" + Huawei.getScreenSize() + "\"");
+        System.out.println("Release year:" + Huawei.getYearReleased());
+        System.out.println("Build in memory:" + Huawei.getBuildInMemoryStorage() + " Gb");
+        System.out.println("Payment system support:" + Huawei.getPaymentSystem());
+        System.out.println("Audio jack presence:" + Huawei.isAudioJackPresence());
+        System.out.println("Max SimCards support:" + Huawei.getSimCardNumSupport());
+        System.out.println("Max microSD card size:" + Huawei.getMaxSdCardSizeSupportGb() + " Gb");
+        System.out.println("****************************");
     }
 }
