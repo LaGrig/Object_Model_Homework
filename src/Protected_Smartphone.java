@@ -1,6 +1,6 @@
 public class Protected_Smartphone extends Samsung {
-    String militaryStandard;
-    boolean radioProtection;
+    private String militaryStandard;
+    private boolean radioProtection;
 
     public Protected_Smartphone(String brand, String model, String operationSystem, int yearReleased,
                                 double screenSize, int buildInMemoryStorage, String paymentSystem,
