@@ -1,10 +1,10 @@
-public class Samsung extends Smartphone {
+public class Samsung extends Smartphone implements Services{
 
-    private String model;
-    private String paymentSystem;
-    private boolean audioJackPresence;
-    private int SimCardNumSupport;
-    private int maxSdCardSizeSupportGb;
+    private static String model;
+    private static String paymentSystem;
+    private static boolean audioJackPresence;
+    private static int SimCardNumSupport;
+    private static int maxSdCardSizeSupportGb;
 
     public Samsung(String brand, String model, String operationSystem, int yearReleased, double screenSize,
                    int buildInMemoryStorage, String paymentSystem,
@@ -17,15 +17,15 @@ public class Samsung extends Smartphone {
         this.maxSdCardSizeSupportGb = maxSdCardSizeSupportGb;
     }
 
-    public String getModel() {
+    public static String getModel() {
         return model;
     }
 
-    public void setModel(String model) {
+    private void setModel(String model) {
         this.model = model;
     }
 
-    public String getPaymentSystem() {
+    public static String getPaymentSystem() {
         return paymentSystem;
     }
 
@@ -33,7 +33,7 @@ public class Samsung extends Smartphone {
         this.paymentSystem = paymentSystem;
     }
 
-    public boolean isAudioJackPresence() {
+    public static boolean isAudioJackPresence() {
         return audioJackPresence;
     }
 
@@ -41,7 +41,7 @@ public class Samsung extends Smartphone {
         this.audioJackPresence = audioJackPresence;
     }
 
-    public int getSimCardNumSupport() {
+    public static int getSimCardNumSupport() {
         return SimCardNumSupport;
     }
 
@@ -49,11 +49,33 @@ public class Samsung extends Smartphone {
         SimCardNumSupport = simCardNumSupport;
     }
 
-    public int getMaxSdCardSizeSupportGb() {
+    public static int getMaxSdCardSizeSupportGb() {
         return maxSdCardSizeSupportGb;
     }
 
     public void setMaxSdCardSizeSupportGb(int maxSdCardSizeSupportGb) {
         this.maxSdCardSizeSupportGb = maxSdCardSizeSupportGb;
     }
+
+    @Override
+    public boolean emergencyCall(boolean emergencyCall) {
+        return false;
+    }
+
+    @Override
+    public boolean pinProtection(boolean pinProtection) {
+        return false;
+    }
+
+    @Override
+    public boolean voiceCall(boolean voiceCall) {
+
+        return voiceCall;
+    }
+
+    @Override
+    public boolean faceTimeCall(boolean faceTimeCall) {
+        return false;
+    }
+
 }

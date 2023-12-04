@@ -1,4 +1,4 @@
-public class Smartphone {
+public abstract class Smartphone {
     private String brand;
     private String operationSystem;
     private int yearReleased;

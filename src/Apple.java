@@ -1,4 +1,4 @@
-public class Apple extends Smartphone {
+public class Apple extends Smartphone implements Services {
     private String model;
     private String paymentSystem;
     private boolean audioJackPresence;
@@ -55,6 +55,27 @@ public class Apple extends Smartphone {
 
     public void setMaxSdCardSizeSupportGb(int maxSdCardSizeSupportGb) {
         this.maxSdCardSizeSupportGb = maxSdCardSizeSupportGb;
+    }
+
+    @Override
+    public boolean emergencyCall(boolean emergencyCall) {
+        return false;
+    }
+
+    @Override
+    public boolean pinProtection(boolean pinProtection) {
+        return false;
+    }
+
+    @Override
+    public boolean voiceCall(boolean voiceCall) {
+
+        return voiceCall;
+    }
+
+    @Override
+    public boolean faceTimeCall(boolean faceTimeCall) {
+        return false;
     }
 }
 
