@@ -1,3 +1,5 @@
+package TechnicType.Service;
+
 public interface Services {
     boolean emergencyCall (boolean emergencyCall);
     boolean pinProtection (boolean pinProtection);

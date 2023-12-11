@@ -1,14 +1,19 @@
-public class Apple extends Smartphone implements Services {
-    private String model;
-    private String paymentSystem;
-    private boolean audioJackPresence;
-    private int SimCardNumSupport;
-    private int maxSdCardSizeSupportGb;
+package TechnicType.Brand;
 
+import TechnicType.Service.Services;
+import TechnicType.Smartphone;
 
-    public Apple(String brand, String model, String operationSystem, int yearReleased, double screenSize,
-                 int buildInMemoryStorage, String paymentSystem,
-                 boolean audioJackPresence, int simCardNumSupport, int maxSdCardSizeSupportGb) {
+public class Samsung extends Smartphone implements Services {
+
+    private static String model;
+    private static String paymentSystem;
+    private static boolean audioJackPresence;
+    private static int SimCardNumSupport;
+    private static int maxSdCardSizeSupportGb;
+
+    public Samsung(String brand, String model, String operationSystem, int yearReleased, double screenSize,
+                   int buildInMemoryStorage, String paymentSystem,
+                   boolean audioJackPresence, int simCardNumSupport, int maxSdCardSizeSupportGb) {
         super(brand, operationSystem, yearReleased, screenSize, buildInMemoryStorage);
         this.model = model;
         this.paymentSystem = paymentSystem;
@@ -17,15 +22,15 @@ public class Apple extends Smartphone implements Services {
         this.maxSdCardSizeSupportGb = maxSdCardSizeSupportGb;
     }
 
-    public String getModel() {
+    public static String getModel() {
         return model;
     }
 
-    public void setModel(String model) {
+    private void setModel(String model) {
         this.model = model;
     }
 
-    public String getPaymentSystem() {
+    public static String getPaymentSystem() {
         return paymentSystem;
     }
 
@@ -33,7 +38,7 @@ public class Apple extends Smartphone implements Services {
         this.paymentSystem = paymentSystem;
     }
 
-    public boolean isAudioJackPresence() {
+    public static boolean isAudioJackPresence() {
         return audioJackPresence;
     }
 
@@ -41,7 +46,7 @@ public class Apple extends Smartphone implements Services {
         this.audioJackPresence = audioJackPresence;
     }
 
-    public int getSimCardNumSupport() {
+    public static int getSimCardNumSupport() {
         return SimCardNumSupport;
     }
 
@@ -49,7 +54,7 @@ public class Apple extends Smartphone implements Services {
         SimCardNumSupport = simCardNumSupport;
     }
 
-    public int getMaxSdCardSizeSupportGb() {
+    public static int getMaxSdCardSizeSupportGb() {
         return maxSdCardSizeSupportGb;
     }
 
@@ -77,6 +82,7 @@ public class Apple extends Smartphone implements Services {
     public boolean faceTimeCall(boolean faceTimeCall) {
         return false;
     }
+
+
+
 }
-
-
