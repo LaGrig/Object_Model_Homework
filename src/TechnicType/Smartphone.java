@@ -1,3 +1,5 @@
+package TechnicType;
+
 public abstract class Smartphone {
     private String brand;
     private String operationSystem;

@@ -1,3 +1,5 @@
+package TechnicType.Brand;
+
 public class Protected_Smartphone extends Samsung {
     private String militaryStandard;
     private boolean radioProtection;
@@ -12,6 +14,13 @@ public class Protected_Smartphone extends Samsung {
         this.radioProtection = radioProtection;
     }
 
+    @Override
+    public String toString() {
+        return "Protected_Smartphone{" +
+                "militaryStandard='" + militaryStandard + '\'' +
+                ", radioProtection=" + radioProtection +
+                "} " + super.toString();
+    }
 
     public String getMilitaryStandard() {
         return militaryStandard;

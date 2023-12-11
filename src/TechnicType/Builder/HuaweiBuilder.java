@@ -1,3 +1,7 @@
+package TechnicType.Builder;
+
+import TechnicType.Brand.Huawei;
+
 public class HuaweiBuilder {
     private String brand;
     private String model;

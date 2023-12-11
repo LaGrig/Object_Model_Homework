@@ -1,3 +1,7 @@
+package TechnicType.Brand;
+
+import TechnicType.Smartphone;
+
 public class Huawei extends Smartphone {
 
     private String model;

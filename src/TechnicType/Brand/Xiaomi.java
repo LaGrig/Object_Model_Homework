@@ -1,3 +1,7 @@
+package TechnicType.Brand;
+
+import TechnicType.Smartphone;
+
 public class Xiaomi extends Smartphone {
 
     private String model;
