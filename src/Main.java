@@ -1,8 +1,8 @@
-import com.mobile.store.Brand.Apple;
-import com.mobile.store.Brand.Protected_Smartphone;
-import com.mobile.store.Brand.Samsung;
-import com.mobile.store.Brand.Xiaomi;
-import com.mobile.store.Builder.HuaweiBuilder;
+import com.mobile.store.brand.Apple;
+import com.mobile.store.brand.Protected_Smartphone;
+import com.mobile.store.brand.Samsung;
+import com.mobile.store.brand.Xiaomi;
+import com.mobile.store.builder.HuaweiBuilder;
 
 public class Main {
 

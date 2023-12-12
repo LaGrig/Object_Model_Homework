@@ -1,19 +1,19 @@
-package com.mobile.store.Brand;
+package com.mobile.store.brand;
 
-import com.mobile.store.Service.Services;
+import com.mobile.store.service.Services;
 import com.mobile.store.Smartphone;
 
-public class Apple extends Smartphone implements Services {
-    private String model;
-    private String paymentSystem;
-    private boolean audioJackPresence;
-    private int SimCardNumSupport;
-    private int maxSdCardSizeSupportGb;
+public class Samsung extends Smartphone implements Services {
 
+    private static String model;
+    private static String paymentSystem;
+    private static boolean audioJackPresence;
+    private static int SimCardNumSupport;
+    private static int maxSdCardSizeSupportGb;
 
-    public Apple(String brand, String model, String operationSystem, int yearReleased, double screenSize,
-                 int buildInMemoryStorage, String paymentSystem,
-                 boolean audioJackPresence, int simCardNumSupport, int maxSdCardSizeSupportGb) {
+    public Samsung(String brand, String model, String operationSystem, int yearReleased, double screenSize,
+                   int buildInMemoryStorage, String paymentSystem,
+                   boolean audioJackPresence, int simCardNumSupport, int maxSdCardSizeSupportGb) {
         super(brand, operationSystem, yearReleased, screenSize, buildInMemoryStorage);
         this.model = model;
         this.paymentSystem = paymentSystem;
@@ -22,15 +22,15 @@ public class Apple extends Smartphone implements Services {
         this.maxSdCardSizeSupportGb = maxSdCardSizeSupportGb;
     }
 
-    public String getModel() {
+    public static String getModel() {
         return model;
     }
 
-    public void setModel(String model) {
+    private void setModel(String model) {
         this.model = model;
     }
 
-    public String getPaymentSystem() {
+    public static String getPaymentSystem() {
         return paymentSystem;
     }
 
@@ -38,7 +38,7 @@ public class Apple extends Smartphone implements Services {
         this.paymentSystem = paymentSystem;
     }
 
-    public boolean isAudioJackPresence() {
+    public static boolean isAudioJackPresence() {
         return audioJackPresence;
     }
 
@@ -46,7 +46,7 @@ public class Apple extends Smartphone implements Services {
         this.audioJackPresence = audioJackPresence;
     }
 
-    public int getSimCardNumSupport() {
+    public static int getSimCardNumSupport() {
         return SimCardNumSupport;
     }
 
@@ -54,7 +54,7 @@ public class Apple extends Smartphone implements Services {
         SimCardNumSupport = simCardNumSupport;
     }
 
-    public int getMaxSdCardSizeSupportGb() {
+    public static int getMaxSdCardSizeSupportGb() {
         return maxSdCardSizeSupportGb;
     }
 
@@ -85,15 +85,6 @@ public class Apple extends Smartphone implements Services {
 
     @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("Apple{");
-        sb.append("model='").append(model).append('\'');
-        sb.append(", paymentSystem='").append(paymentSystem).append('\'');
-        sb.append(", audioJackPresence=").append(audioJackPresence);
-        sb.append(", SimCardNumSupport=").append(SimCardNumSupport);
-        sb.append(", maxSdCardSizeSupportGb=").append(maxSdCardSizeSupportGb);
-        sb.append('}');
-        return sb.toString();
+        return "Samsung{super=${super.toString()}}";
     }
 }
-
-
