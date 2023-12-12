@@ -1,4 +1,4 @@
-package com.mobile.store.Service;
+package com.mobile.store.service;
 
 public interface Services {
     boolean emergencyCall (boolean emergencyCall);

@@ -1,4 +1,4 @@
-package com.mobile.store.Brand;
+package com.mobile.store.brand;
 
 import com.mobile.store.Smartphone;
 
