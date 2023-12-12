@@ -1,6 +1,6 @@
-package TechnicType.Builder;
+package com.mobile.store.Builder;
 
-import TechnicType.Brand.Huawei;
+import com.mobile.store.Brand.Huawei;
 
 public class HuaweiBuilder {
     private String brand;

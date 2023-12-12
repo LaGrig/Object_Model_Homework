@@ -1,18 +1,19 @@
-package TechnicType.Brand;
+package com.mobile.store.Brand;
 
-import TechnicType.Smartphone;
+import com.mobile.store.Service.Services;
+import com.mobile.store.Smartphone;
 
-public class Huawei extends Smartphone {
-
+public class Apple extends Smartphone implements Services {
     private String model;
     private String paymentSystem;
     private boolean audioJackPresence;
     private int SimCardNumSupport;
     private int maxSdCardSizeSupportGb;
 
-    public Huawei(String brand, String model, String operationSystem, int yearReleased, double screenSize,
-                  int buildInMemoryStorage, String paymentSystem,
-                  boolean audioJackPresence, int simCardNumSupport, int maxSdCardSizeSupportGb) {
+
+    public Apple(String brand, String model, String operationSystem, int yearReleased, double screenSize,
+                 int buildInMemoryStorage, String paymentSystem,
+                 boolean audioJackPresence, int simCardNumSupport, int maxSdCardSizeSupportGb) {
         super(brand, operationSystem, yearReleased, screenSize, buildInMemoryStorage);
         this.model = model;
         this.paymentSystem = paymentSystem;
@@ -60,4 +61,39 @@ public class Huawei extends Smartphone {
     public void setMaxSdCardSizeSupportGb(int maxSdCardSizeSupportGb) {
         this.maxSdCardSizeSupportGb = maxSdCardSizeSupportGb;
     }
+
+    @Override
+    public boolean emergencyCall(boolean emergencyCall) {
+        return false;
+    }
+
+    @Override
+    public boolean pinProtection(boolean pinProtection) {
+        return false;
+    }
+
+    @Override
+    public boolean voiceCall(boolean voiceCall) {
+
+        return voiceCall;
+    }
+
+    @Override
+    public boolean faceTimeCall(boolean faceTimeCall) {
+        return false;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("Apple{");
+        sb.append("model='").append(model).append('\'');
+        sb.append(", paymentSystem='").append(paymentSystem).append('\'');
+        sb.append(", audioJackPresence=").append(audioJackPresence);
+        sb.append(", SimCardNumSupport=").append(SimCardNumSupport);
+        sb.append(", maxSdCardSizeSupportGb=").append(maxSdCardSizeSupportGb);
+        sb.append('}');
+        return sb.toString();
+    }
 }
+
+
