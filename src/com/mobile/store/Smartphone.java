@@ -1,4 +1,4 @@
-package TechnicType;
+package com.mobile.store;
 
 public abstract class Smartphone {
     private String brand;

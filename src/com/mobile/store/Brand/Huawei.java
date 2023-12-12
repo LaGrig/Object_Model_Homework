@@ -1,8 +1,10 @@
-package TechnicType.Brand;
+package com.mobile.store.Brand;
 
-import TechnicType.Smartphone;
+import com.mobile.store.Smartphone;
 
-public class Xiaomi extends Smartphone {
+import java.util.StringJoiner;
+
+public class Huawei extends Smartphone {
 
     private String model;
     private String paymentSystem;
@@ -10,7 +12,7 @@ public class Xiaomi extends Smartphone {
     private int SimCardNumSupport;
     private int maxSdCardSizeSupportGb;
 
-    public Xiaomi(String brand, String model, String operationSystem, int yearReleased, double screenSize,
+    public Huawei(String brand, String model, String operationSystem, int yearReleased, double screenSize,
                   int buildInMemoryStorage, String paymentSystem,
                   boolean audioJackPresence, int simCardNumSupport, int maxSdCardSizeSupportGb) {
         super(brand, operationSystem, yearReleased, screenSize, buildInMemoryStorage);
@@ -60,5 +62,15 @@ public class Xiaomi extends Smartphone {
     public void setMaxSdCardSizeSupportGb(int maxSdCardSizeSupportGb) {
         this.maxSdCardSizeSupportGb = maxSdCardSizeSupportGb;
     }
-}
 
+    @Override
+    public String toString() {
+        return new StringJoiner(", ", Huawei.class.getSimpleName() + "[", "]")
+                .add("model='" + model + "'")
+                .add("paymentSystem='" + paymentSystem + "'")
+                .add("audioJackPresence=" + audioJackPresence)
+                .add("SimCardNumSupport=" + SimCardNumSupport)
+                .add("maxSdCardSizeSupportGb=" + maxSdCardSizeSupportGb)
+                .toString();
+    }
+}

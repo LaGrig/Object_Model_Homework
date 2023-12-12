@@ -1,4 +1,4 @@
-package TechnicType.Brand;
+package com.mobile.store.Brand;
 
 public class Protected_Smartphone extends Samsung {
     private String militaryStandard;
