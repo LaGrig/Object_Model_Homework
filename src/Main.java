@@ -95,6 +95,10 @@ public class Main {
         String[] data = readFileWithBufferReader(FILE_NAME);
         System.out.println(data);
 
+        phonesListObject(data);
+    }
+
+    private static void phonesListObject(String[] data) {
         for (int c = 1; c < data.length; c++) {
             var pieces = data[c].split(",");
             Smartphone smartphones = null;
