@@ -53,19 +53,22 @@ public class Main {
                             Double.parseDouble(pieces[4]), Integer.parseInt(pieces[5]), pieces[6],
                             Boolean.parseBoolean(pieces[7]), Integer.parseInt(pieces[8]),
                             Integer.parseInt(pieces[9]));
-//                case "samsung":
-//                    smartphones = new Samsung(pieces[0], pieces[1], pieces[2], Integer.parseInt(pieces[3]),
-//                            Double.parseDouble(pieces[4]), Integer.parseInt(pieces[5]), pieces[6],
-//                            Boolean.parseBoolean(pieces[7]), Integer.parseInt(pieces[8]),
-//                            Integer.parseInt(pieces[9]));
-//                case "huawei":
-//                    smartphones = new Huawei(pieces[0], pieces[1], pieces[2], Integer.parseInt(pieces[3]),
-//                            Double.parseDouble(pieces[4]), Integer.parseInt(pieces[5]), pieces[6],
-//                            Boolean.parseBoolean(pieces[7]), Integer.parseInt(pieces[8]), Integer.parseInt(pieces[9]));
-//                case "xiaomi":
-//                    smartphones = new Xiaomi(pieces[0], pieces[1], pieces[2], Integer.parseInt(pieces[3]),
-//                            Double.parseDouble(pieces[4]), Integer.parseInt(pieces[5]), pieces[6],
-//                            Boolean.parseBoolean(pieces[7]), Integer.parseInt(pieces[8]), Integer.parseInt(pieces[9]));
+                    break;
+                case "samsung":
+                    smartphones = new Samsung(pieces[0], pieces[1], pieces[2], Integer.parseInt(pieces[3]),
+                            Double.parseDouble(pieces[4]), Integer.parseInt(pieces[5]), pieces[6],
+                            Boolean.parseBoolean(pieces[7]), Integer.parseInt(pieces[8]),
+                            Integer.parseInt(pieces[9]));
+                    break;
+                case "huawei":
+                    smartphones = new Huawei(pieces[0], pieces[1], pieces[2], Integer.parseInt(pieces[3]),
+                            Double.parseDouble(pieces[4]), Integer.parseInt(pieces[5]), pieces[6],
+                            Boolean.parseBoolean(pieces[7]), Integer.parseInt(pieces[8]), Integer.parseInt(pieces[9]));
+                  break;
+                case "xiaomi":
+                    smartphones = new Xiaomi(pieces[0], pieces[1], pieces[2], Integer.parseInt(pieces[3]),
+                            Double.parseDouble(pieces[4]), Integer.parseInt(pieces[5]), pieces[6],
+                            Boolean.parseBoolean(pieces[7]), Integer.parseInt(pieces[8]), Integer.parseInt(pieces[9]));
                     break;
             }
             System.out.println(smartphones);
