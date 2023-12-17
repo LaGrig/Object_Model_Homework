@@ -85,7 +85,7 @@ public class Apple extends Smartphone implements Services {
 
     @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("Apple{");
+        final StringBuilder sb = new StringBuilder("Apple{");
         sb.append("model='").append(model).append('\'');
         sb.append(", paymentSystem='").append(paymentSystem).append('\'');
         sb.append(", audioJackPresence=").append(audioJackPresence);
