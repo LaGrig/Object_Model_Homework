@@ -63,13 +63,19 @@ public class Xiaomi extends Smartphone {
 
     @Override
     public String toString() {
-        return "Xiaomi{" +
-                "model='" + model + '\'' +
-                ", paymentSystem='" + paymentSystem + '\'' +
-                ", audioJackPresence=" + audioJackPresence +
-                ", SimCardNumSupport=" + SimCardNumSupport +
-                ", maxSdCardSizeSupportGb=" + maxSdCardSizeSupportGb +
-                '}';
+        final StringBuilder sb = new StringBuilder("Xiaomi{");
+        sb.append("brand='").append(getBrand()).append('\'');
+        sb.append(", model='").append(model).append('\'');
+        sb.append(", operation system='").append(getOperationSystem()).append('\'');
+        sb.append(", release year='").append(getYearReleased()).append('\'');
+        sb.append(", screen size='").append(getScreenSize()).append('\'');
+        sb.append(", build in storage='").append(getBuildInMemoryStorage()).append('\'');
+        sb.append(", paymentSystem='").append(paymentSystem).append('\'');
+        sb.append(", audioJackPresence=").append(audioJackPresence);
+        sb.append(", SimCardNumSupport=").append(SimCardNumSupport);
+        sb.append(", maxSdCardSizeSupportGb=").append(maxSdCardSizeSupportGb);
+        sb.append('}');
+        return sb.toString();
     }
 }
 
