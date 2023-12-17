@@ -86,7 +86,12 @@ public class Apple extends Smartphone implements Services {
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Apple{");
-        sb.append("model='").append(model).append('\'');
+        sb.append("brand='").append(getBrand()).append('\'');
+        sb.append(", model='").append(model).append('\'');
+        sb.append(", operation system='").append(getOperationSystem()).append('\'');
+        sb.append(", release year='").append(getYearReleased()).append('\'');
+        sb.append(", screen size='").append(getScreenSize()).append('\'');
+        sb.append(", build in storage='").append(getBuildInMemoryStorage()).append('\'');
         sb.append(", paymentSystem='").append(paymentSystem).append('\'');
         sb.append(", audioJackPresence=").append(audioJackPresence);
         sb.append(", SimCardNumSupport=").append(SimCardNumSupport);

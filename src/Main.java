@@ -47,28 +47,23 @@ public class Main {
         for (int c = 1; c < data.length; c++) {
             var pieces = data[c].split(",");
             Smartphone smartphones = null;
-            switch (pieces[2].toLowerCase()) {
+            switch (pieces[0].toLowerCase()) {
                 case "apple":
                     smartphones = new Apple(pieces[0], pieces[1], pieces[2], Integer.parseInt(pieces[3]),
                             Double.parseDouble(pieces[4]), Integer.parseInt(pieces[5]), pieces[6],
                             Boolean.parseBoolean(pieces[7]), Integer.parseInt(pieces[8]),
                             Integer.parseInt(pieces[9]));
 //                case "samsung":
-//                    smartphone = new Samsung(pieces[0], pieces[1], pieces[2], Integer.parseInt(pieces[3]),
+//                    smartphones = new Samsung(pieces[0], pieces[1], pieces[2], Integer.parseInt(pieces[3]),
 //                            Double.parseDouble(pieces[4]), Integer.parseInt(pieces[5]), pieces[6],
 //                            Boolean.parseBoolean(pieces[7]), Integer.parseInt(pieces[8]),
 //                            Integer.parseInt(pieces[9]));
-//                case "samsung_protected":
-//                    smartphone = new Protected_Smartphone(pieces[0], pieces[1], pieces[2], Integer.parseInt(pieces[3]),
-//                            Double.parseDouble(pieces[4]), Integer.parseInt(pieces[5]), pieces[6],
-//                            Boolean.parseBoolean(pieces[7]), Integer.parseInt(pieces[8]), Integer.parseInt(pieces[9]),
-//                            "MIL-STD-810H", true);
 //                case "huawei":
-//                    smartphone = new Huawei(pieces[0], pieces[1], pieces[2], Integer.parseInt(pieces[3]),
+//                    smartphones = new Huawei(pieces[0], pieces[1], pieces[2], Integer.parseInt(pieces[3]),
 //                            Double.parseDouble(pieces[4]), Integer.parseInt(pieces[5]), pieces[6],
 //                            Boolean.parseBoolean(pieces[7]), Integer.parseInt(pieces[8]), Integer.parseInt(pieces[9]));
 //                case "xiaomi":
-//                    smartphone = new Xiaomi(pieces[0], pieces[1], pieces[2], Integer.parseInt(pieces[3]),
+//                    smartphones = new Xiaomi(pieces[0], pieces[1], pieces[2], Integer.parseInt(pieces[3]),
 //                            Double.parseDouble(pieces[4]), Integer.parseInt(pieces[5]), pieces[6],
 //                            Boolean.parseBoolean(pieces[7]), Integer.parseInt(pieces[8]), Integer.parseInt(pieces[9]));
                     break;

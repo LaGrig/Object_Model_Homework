@@ -85,6 +85,18 @@ public class Samsung extends Smartphone implements Services {
 
     @Override
     public String toString() {
-        return "Samsung{super=${super.toString()}}";
+        final StringBuilder sb = new StringBuilder("Samsung{");
+        sb.append("brand='").append(getBrand()).append('\'');
+        sb.append(", model='").append(model).append('\'');
+        sb.append(", operation system='").append(getOperationSystem()).append('\'');
+        sb.append(", release year='").append(getYearReleased()).append('\'');
+        sb.append(", screen size='").append(getScreenSize()).append('\'');
+        sb.append(", build in storage='").append(getBuildInMemoryStorage()).append('\'');
+        sb.append(", paymentSystem='").append(paymentSystem).append('\'');
+        sb.append(", audioJackPresence=").append(audioJackPresence);
+        sb.append(", SimCardNumSupport=").append(SimCardNumSupport);
+        sb.append(", maxSdCardSizeSupportGb=").append(maxSdCardSizeSupportGb);
+        sb.append('}');
+        return sb.toString();
     }
 }
