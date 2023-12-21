@@ -1,6 +1,0 @@
-brand,model,Operation system,Release year,screen,memory,Payment_system,Audio_Jack,Sim_Card_Number_support,Max_MicroSD_Card_Support
-Apple,iPhone_15_Pro_Max,iOs,2023,6.7,512,Apple_Pay,false,1,0
-Samsung,S23_Ultra,Android,2023,6.8,512,Google_Pay,false,1,2048
-Samsung,XCover_6_Pro,Android,2022,6.6,128,Google_Pay,true,2,1024
-Huawei,Mate_X3,Android,2023,7.85,512,Google_Pay,true,2,2048
-Xiaomi,13_Ultra,Android,2023,6.73,512,Google_Pay,true,2,2048

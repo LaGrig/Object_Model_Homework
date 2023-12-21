@@ -1,10 +1,8 @@
 import com.mobile.store.Smartphone;
 import com.mobile.store.brand.Apple;
 import com.mobile.store.brand.Huawei;
-import com.mobile.store.brand.Protected_Smartphone;
 import com.mobile.store.brand.Samsung;
 import com.mobile.store.brand.Xiaomi;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -16,7 +14,7 @@ import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class Main {
-    private static final String FILE_NAME = "resources/smartphones2.csv";
+    private static final String FILE_NAME = "resources/smartphones100.csv";
 
     static String[] readFileFromScanner(String fileName) {
         ArrayList<String> data = new ArrayList<String>();
@@ -126,7 +124,7 @@ public class Main {
                             Boolean.parseBoolean(pieces[7]), Integer.parseInt(pieces[8]), Integer.parseInt(pieces[9]));
                     break;
             }
-            System.out.println("Reading from different types file import: " + smartphones);
+            System.out.println("Smartphone: " + smartphones);
         }
     }
 }
