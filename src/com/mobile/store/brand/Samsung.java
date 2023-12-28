@@ -22,7 +22,7 @@ public class Samsung extends Smartphone implements Services {
         this.maxSdCardSizeSupportGb = maxSdCardSizeSupportGb;
     }
 
-    public static String getModel() {
+    public String getModel() {
         return model;
     }
 

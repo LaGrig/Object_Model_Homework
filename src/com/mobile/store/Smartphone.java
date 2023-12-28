@@ -1,6 +1,7 @@
 package com.mobile.store;
 
-public abstract class Smartphone {
+public abstract class Smartphone{
+    private int id;
     private String brand;
     private String operationSystem;
     private int yearReleased;
@@ -13,8 +14,8 @@ public abstract class Smartphone {
         this.yearReleased = yearReleased;
         this.screenSize = screenSize;
         this.buildInMemoryStorage = buildInMemoryStorage;
+        this.id = id;
     }
-
     public String getBrand() {
         return brand;
     }
@@ -54,4 +55,8 @@ public abstract class Smartphone {
     public void setBuildInMemoryStorage(int buildInMemoryStorage) {
         this.buildInMemoryStorage = buildInMemoryStorage;
     }
+
+    public int getId() { return id;  }
+
+    public void setId(int id) { this.id = id; }
 }
