@@ -7,13 +7,10 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.Period;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Date;
 import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.stream.Stream;
@@ -70,16 +67,15 @@ public class Main {
                 .forEach(System.out::println);
 
 
-
         var globalTimerFinish = System.currentTimeMillis() - timerStart;
         System.out.println("**********************************************");
         System.out.println("File import time " + importFileTimerFinish + "ms");
-        System.out.println("Object creation time " + objectCreationTimerFinish  +"ms");
-        System.out.println("All processes duration " + globalTimerFinish +"ms");
+        System.out.println("Object creation time " + objectCreationTimerFinish + "ms");
+        System.out.println("All processes duration " + globalTimerFinish + "ms");
 
         System.out.println("**********************************************");
-        LocalDateTime startDate = LocalDateTime.of(2023, 10, 22,18,00);
-        LocalDateTime endDate = LocalDateTime.of(2024, 03, 07,01,00);
+        LocalDateTime startDate = LocalDateTime.of(2023, 10, 22, 18, 00);
+        LocalDateTime endDate = LocalDateTime.of(2024, 03, 07, 01, 00);
 
         long days = ChronoUnit.DAYS.between(startDate, endDate);
         long hours = ChronoUnit.HOURS.between(startDate, endDate) % 24;
