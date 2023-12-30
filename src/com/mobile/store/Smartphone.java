@@ -8,7 +8,7 @@ public abstract class Smartphone{
     private double screenSize;
     private int buildInMemoryStorage;
 
-    public Smartphone(String brand, String operationSystem, int yearReleased, double screenSize, int buildInMemoryStorage) {
+    public Smartphone(String brand, String operationSystem, int yearReleased, double screenSize, int buildInMemoryStorage, int id) {
         this.brand = brand;
         this.operationSystem = operationSystem;
         this.yearReleased = yearReleased;
@@ -59,4 +59,17 @@ public abstract class Smartphone{
     public int getId() { return id;  }
 
     public void setId(int id) { this.id = id; }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Smartphone{");
+        sb.append("brand='").append(brand).append('\'');
+        sb.append(", operationSystem='").append(operationSystem).append('\'');
+        sb.append(", yearReleased=").append(yearReleased);
+        sb.append(", screenSize=").append(screenSize);
+        sb.append(", buildInMemoryStorage=").append(buildInMemoryStorage);
+        sb.append(", id=").append(id);
+        sb.append('}');
+        return sb.toString();
+    }
 }

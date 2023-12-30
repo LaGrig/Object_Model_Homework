@@ -13,6 +13,13 @@ public class HuaweiBuilder {
     private boolean audioJackPresence;
     private int simCardNumSupport;
     private int maxSdCardSizeSupportGb;
+    private int id;
+
+
+    public HuaweiBuilder setId(String brand) {
+        this.id = id;
+        return this;
+    }
 
     public HuaweiBuilder setBrand(String brand) {
         this.brand = brand;
@@ -65,6 +72,6 @@ public class HuaweiBuilder {
     }
 
     public Huawei createHuawei() {
-        return new Huawei(brand, model, operationSystem, yearReleased, screenSize, buildInMemoryStorage, paymentSystem, audioJackPresence, simCardNumSupport, maxSdCardSizeSupportGb);
+        return new Huawei(brand, model, operationSystem, yearReleased, screenSize, buildInMemoryStorage, paymentSystem, audioJackPresence, simCardNumSupport, maxSdCardSizeSupportGb, id);
     }
 }

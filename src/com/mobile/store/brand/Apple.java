@@ -13,8 +13,8 @@ public class Apple extends Smartphone implements Services {
 
     public Apple(String brand, String model, String operationSystem, int yearReleased, double screenSize,
                  int buildInMemoryStorage, String paymentSystem,
-                 boolean audioJackPresence, int simCardNumSupport, int maxSdCardSizeSupportGb) {
-        super(brand, operationSystem, yearReleased, screenSize, buildInMemoryStorage);
+                 boolean audioJackPresence, int simCardNumSupport, int maxSdCardSizeSupportGb, int id) {
+        super(brand, operationSystem, yearReleased, screenSize, buildInMemoryStorage, id);
         this.model = model;
         this.paymentSystem = paymentSystem;
         this.audioJackPresence = audioJackPresence;
@@ -96,6 +96,7 @@ public class Apple extends Smartphone implements Services {
         sb.append(", audioJackPresence=").append(audioJackPresence);
         sb.append(", SimCardNumSupport=").append(SimCardNumSupport);
         sb.append(", maxSdCardSizeSupportGb=").append(maxSdCardSizeSupportGb);
+        sb.append((", id=")).append((getId())).append('\'');
         sb.append('}');
         return sb.toString();
     }

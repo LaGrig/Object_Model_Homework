@@ -7,9 +7,9 @@ public class Protected_Smartphone extends Samsung {
     public Protected_Smartphone(String brand, String model, String operationSystem, int yearReleased,
                                 double screenSize, int buildInMemoryStorage, String paymentSystem,
                                 boolean audioJackPresence, int simCardNumSupport, int maxSdCardSizeSupportGb,
-                                String militaryStandard, boolean radioProtection) {
+                                String militaryStandard, boolean radioProtection, int id) {
         super(brand, model, operationSystem, yearReleased, screenSize, buildInMemoryStorage, paymentSystem,
-                audioJackPresence, simCardNumSupport, maxSdCardSizeSupportGb);
+                audioJackPresence, simCardNumSupport, maxSdCardSizeSupportGb, id);
         this.militaryStandard = militaryStandard;
         this.radioProtection = radioProtection;
     }
